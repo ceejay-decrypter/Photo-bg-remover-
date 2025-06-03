@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>JamesTech Background Remover</title>
+  <title>MOHAAZTech Background Remover</title>
   <style>
     body {
       margin: 0;
       padding: 0;
-      background: url('https://files.catbox.moe/wgws8f.jpg') no-repeat center center fixed;
+      background: url('https://files.catbox.moe/el1fxx.jpg') no-repeat center center fixed;
       background-size: cover;
       font-family: 'Poppins', sans-serif;
     }
@@ -52,7 +52,7 @@
 </head>
 <body>
   <div class="overlay">
-    <div class="logo">JamesTech Background Remover</div>
+    <div class="logo">MOHAAZTech Background Remover</div>
     <input type="file" id="imageInput" accept="image/*" />
     <button onclick="removeBackground()">Remove Background</button>
     <div id="result"></div>
@@ -61,7 +61,7 @@
   <script>
     async function removeBackground() {
       const input = document.getElementById('imageInput');
-      if (!input.files.length) return alert('Please upload an image.');
+      if (!input.files.length) return alert('Please UPLOAD AN IMAGR.');
 
       const formData = new FormData();
       formData.append('image_file', input.files[0]);
@@ -85,7 +85,7 @@
       const url = URL.createObjectURL(blob);
 
       document.getElementById('result').innerHTML = `
-        <h3>Background Removed Image:</h3>
+        <h3>Background Removed successfully :</h3>
         <img src="${url}" alt="Result"/>
       `;
     }
